@@ -1,0 +1,19 @@
+QUESTION-EVEN DIGIT SUM
+
+
+import java.io.*;
+import java.util.*;
+class UserMainCode{
+
+  public int evendigitSum(int input1){
+     int esum=0;
+     while(input1>0){
+      int d=input1%10;
+      if(d%2==0){
+          esum+=d;
+       }
+       input1/=10;
+     }
+    return esum;
+ }
+}     

@@ -1,0 +1,19 @@
+QUESTION-ODD DIGIT SUM
+
+
+import java.io.*;
+import java.util.*;
+class UserMainCode{
+
+  public int oddDigitSum(int input1){
+     int osum=0;
+     while(input1>0){
+      int d=input1%10;
+      if(d%2!=0){
+          osum+=d;
+       }
+       input1/=10;
+     }
+    return osum;
+ }
+}     
